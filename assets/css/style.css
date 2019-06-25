@@ -17,12 +17,14 @@ header{
   border-bottom: 5px solid #cccccc;
   margin-bottom: 30px;
   height:100px;
+  position: static;
 }
 /* Top Bar Content*/
 .navBar{
   width: 960px;
-  margin-left: 250px;
-  margin-top: 0px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%) 
 }
 /* Top Bar Name Box */
 #name{
