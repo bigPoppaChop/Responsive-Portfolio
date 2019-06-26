@@ -1,87 +1,88 @@
-/* Overarching Styling */
 body{
   font-family: Arial, Helvetica, sans-serif;
   color: #777777;
-  margin:0px;
-  padding:0px;
   background-image: url(../images/seamless_paper_texture.png);
-  height: 100%;
+  font-size: 18px;
+  line-height: 34px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-/* Top Bar */
+
 header{
-  padding: 0px;
   background: #ffffff;
   border-bottom: 5px solid #cccccc;
-  margin-bottom: 30px;
-  height:100px;
-  position: static;
+  margin-bottom: 50px;
+  /* position: fixed; */
+  width: 100%;
 }
-/* Top Bar Content*/
-.navBar{
-  width: 960px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%) 
+
+p{
+  margin-bottom: 20px;
 }
-/* Top Bar Name Box */
+
+nav{
+  float: right;
+  margin-top: 25px;
+}
+
+nav a{
+  display: inline-block;
+  padding-left: 15px;
+  margin-left: 15px;
+  line-height: 18px;
+  color: #999;
+  text-decoration: none;
+}
+
+/*Navigation Bar*/
+.container{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
+}
+/* Name Box */
 #name{
   background:#4aaaa5;
-  color: white;
+  color: #ffffff;
   font-size: 30px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  text-align:center;
-  float:left;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 33px;
-  padding-bottom: 32px;
+  text-align: center;
+  float: left;
+  width: 250px;
+  height: 90px;
+  font-weight: bold;
+  line-height: 90px;
 }  
-/* Top bar Links Box */
-.navigationLinks{
-  color: #777777;
-  float:right;
-  text-align:center;
-  padding-top: 41px;
-  padding-bottom: 41px;
-}
-#aboutLink, #portfolioLink, #contactLink{
-  text-decoration: none;
-  color:#777777;
-}
-#portfolioLink{
-  border-right:2px solid #777777;
-  padding-right: 5px;
-  border-left:2px solid #777777;
-  padding-left: 5px;
-}
+
 /* About Me Content */
-.pageContent{
-  margin-left: 250px;
-  background-color: #ffffff;
-  border: 2px solid #cccccc;
-  width: 960px;
-  /* margin-bottom: 67px; */
-}
-/* Content Title */
-#contentTitle{
-  padding: 15px;
-  padding-left: 0;
-  margin-left: 20px;
-  margin-right:20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color:#4aaaa5;
-  font-size: 32px;
-  border-bottom: 2px solid #cccccc;
-}
-/* About Me Content Body */
-#aboutmeContent{
+#pageContent{
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
   padding: 20px;
-  line-height: 150%;
-  font-size: 18px;
 }
+
+/* Content Title */
+#title{
+  margin: 20px;
+  margin-bottom: 20px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  color: #4aaaa5;
+  border-bottom: 2px solid #cccccc;
+  font-size: 28px;
+}
+/* About Me Image */
+#image{
+  float: left;
+  margin-right: 20px;
+}
+
 /* Contact Content Body */
 #contactForm{
   padding: 20px;
